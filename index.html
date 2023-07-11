@@ -132,8 +132,8 @@ window.onload=function starttime(){
 
     function time(obj,futimg){
         var nowtime = new Date().getTime();             // 现在时间转换为时间戳
-        var futruetime =  new Date(futimg).getTime();   // 未来时间转换为时间戳
-        var msec = nowtime-futruetime;                  // 毫秒 未来时间-现在时间
+        var futuretime =  new Date(futimg).getTime();   // 未来时间转换为时间戳
+        var msec = nowtime-futuretime;                  // 毫秒 未来时间-现在时间
         var time = (msec/1000);                         // 毫秒/1000
         var day = parseInt(time/86400);                 // 天  24*60*60*1000 
         var hour = parseInt(time/3600)-24*day;          // 小时 60*60 总小时数-过去的小时数=现在的小时数 
